@@ -13,7 +13,8 @@
 #main-div{
   height: 90vh;
   width: 100vw;
-  background: url(/assets_hs/img/main-div.JPG);
+  /*background: url("/assets_hs/img/main-div.JPG");*/
+  background: red;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
