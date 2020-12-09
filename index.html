@@ -492,30 +492,12 @@
     <!-- Footer -->
     <div class="footer-section bg-black white" id="footer">
       <div class="grid-x grid-padding-x grid-padding-y">
-        <div class="cell large-4"></div>
-        <div class="cell large-4 text-center">
-          <a href="https://www.facebook.com/">
-            <i class="fa fa-facebook social-icons"></i>
-          </a>
-          <a href="https://www.instagram.com//?hl=en">
-            <i class="fa fa-instagram social-icons"></i>
-          </a>
-          <a href="https://twitter.com/">
-            <i class="fa fa-twitter social-icons"></i>
-          </a>
-          <a href="https://www.youtube.com/channel/">
-            <i class="fa fa-youtube-play social-icons"></i>
-          </a>
-          <a href="https://www.linkedin.com/company//">
-            <i class="fa fa-linkedin social-icons"></i>
-          </a>
-        </div>
-        <div class="cell large-4 text-right">
+        <div class="cell large-7 text-right">
           <a href="mailto:hackstudio@cusat.ac.in"><i class="fas fa-envelope-open-text fa-2x footery"></i></a>
           <a href="https://www.linkedin.com/company/thehackstudio/"><i class="fab fa-linkedin fa-2x footery"></i></a>
           <small style="font-size: 1em;">
             &copy;
-            <span id="year"></span>
+            2021
             HackStudio 2.0
           </small>
         </div>
@@ -560,22 +542,19 @@
   });
   // });
 
-  $(function () {
-    $('.nav-link').on('click', function () {
-      if (!Foundation.MediaQuery.atLeast('large')) {
-        $("#navigation-bar").css({
-          "display": "none"
-        });
-      }
-    });
-  });
-  var today = new Date()
-  var year = today.getFullYear()
-  document.getElementById("year").innerHTML = year
-  function sponsorshipContactTemplate() {
-    document.getElementById("contact-subject").value = "Sponsorship";
-    document.getElementById("sponsorship-alert").classList.remove("hide");
-  }
+  // $(function () {
+  //   $('.nav-link').on('click', function () {
+  //     if (!Foundation.MediaQuery.atLeast('large')) {
+  //       $("#navigation-bar").css({
+  //         "display": "none"
+  //       });
+  //     }
+  //   });
+  // });
+  // function sponsorshipContactTemplate() {
+  //   document.getElementById("contact-subject").value = "Sponsorship";
+  //   document.getElementById("sponsorship-alert").classList.remove("hide");
+  // }
 
 </script>
 
