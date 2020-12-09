@@ -62,7 +62,7 @@ span.line:after {
   width: 10px
 }
 dt{
-  color: #ffde59;
+  color: #fe5831;
 }
 .main-header{
   text-align: center;
@@ -71,6 +71,13 @@ dt{
   font-size: 7em;
   font-weight: 700;
 }
+
+@media screen and (max-width:960px) {
+  .main-header {
+    font-size: 5em;
+  }
+}
+
 .home-container {
   background-color: rgba(0, 0, 0, .75);
   position: fixed;
@@ -209,6 +216,10 @@ dt{
 
 #bossard img {
   height: 1.6rem
+}
+
+.footery {
+  padding-right :5px;
 }
 
 #bossard:hover {
