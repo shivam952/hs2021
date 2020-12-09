@@ -485,6 +485,8 @@ dt{
 
 .contact-section {
   background: url(../images/png/bg/cusat-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 0;
   padding-bottom: .65rem
 }
