@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="HackStudio">
+    <meta name="author" content="HackStd">
+    <title>HackStudio | Feb 22-23 | 24 hours hackathon</title>
+    <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+     <link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+function jump(h){
+    var url = location.href;               //Save down the URL without hash.
+    location.href = "#"+h;                 //Go to the target element.
+    history.replaceState(null,null,url);
+    window.scrollTo(0, url,smooth);   //Don't like hashes. Changing it back.
+}
+</script>
+<body id="page-top"  data-target=".navbar-fixed-top" onload="myFunction()">
+  
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" id="myDiv" style="overflow-x: hidden;">
+                <div class="container" >
+                    <div class="navbar-header">
+                    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    		<i class="fa fa-bars"></i>
+                    	</button> 
+                    	<a class="navbar-brand page-scroll" href="#page-top">
+                    		<img alt="HackStudio Logo" src="assets/img/small-hacknotts-white-100x100.png" width="60">
+                    	</a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-left navbar-main-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="hidden"><a href="#page-top"></a></li>
+                            <!-- <li><a class="page-scroll" href="#schedule">Schedule</a></li> -->
+                            <li><a class="page-scroll" 	onclick="jump('description');">About</a></li>
+                            <li><a class="page-scroll"  onclick="jump('tracks');">Tracks</a></li>
+                            <li><a class="page-scroll"  onclick="jump('faq');">FAQ</a></li>
+                            <li><a class="page-scroll"  onclick="jump('sponsors');">Sponsors</a></li>
+                            <li><a class="page-scroll"  onclick="jump('venue');">Venue</a></li>
+                            <li><a class="page-scroll"  href="https://www.notion.so/HackStudio-Schedule-233ae65dde17404782cc67fa93618ca5">Schedule</a></li>
+                            <li><a class="page-scroll"  href="team.html">Team</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    <header class="intro">
+        <div class="intro-body" id="banner" style="">
+            <div class="container"><img alt="Cochin University of Science and Technology" id="cover-image" src="assets/img/logo.original.png" alt="HackStudio">
+                <p class="intro-text">A 24 hour Hackathon
+                   organized by IT Association, Cochin University of Science and Technology, supported by</br> Kerala Startup Mission</a>.</p>
+                <p class="intro-text intro-date">February 22<sup>nd</sup> and 23<sup>rd</sup> 2020</p><a class="intro-venue page-scroll" href="https://goo.gl/maps/TstPw6n8ZAatCs4N9"><strong>Kochi, Kerala</strong></a>
+                <p class="intro-buttons">
+                
+                    <center><button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg> Apply with Devfolio </button></center>
+                </p>
+            </div>
+        </div>
+    </header>
+    <section id="description" class="text-center" style="">
+        <div class="container">
+            <div class="row align-items-center">
+            <!-- About Content -->
+                <div class="col-12 col-md-6 order-2 order-lg-1">
+                    <div class="about-content-text mb-80">
+                        <h1 class="wow fadeInUp" data-wow-delay="300ms">What is <span style="color: #fb8e00;">HackStudio</span>?</h1>
+                        <p class="wow fadeInUp" data-wow-delay="300ms" > Join hundreds of participants in Hack Studio - A
+                            plentitude of opportunities where enthusiastic minds could brainstorm on solutions for challenging 
+                            issues through technology. Put your skills to the test, and you could win amazing prizes and sharpen
+                            your competitive edge. So be ready to caffeinate, collaborate and celebrate. The hackathon will also 
+                            have keynotes & workshops from executives from the industry.</p>
+                    </div>
+           </div>
+           <div class="col-6 col-md-6 order-1 order-lg-2">
+                <div class="about-thumb mb-80 wow fadeInUp" style= "" data-wow-delay="300ms">
+                    <img src="assets/img/LOGO.png" style="" alt="HackStudio Logo" id="abt_hs">
+                </div>
+            </div>
+        </div> 
+       
+            </div></section>
+
+            <section id="about" class="cta text-center" >
+                <div class="container">
+                    <!-- About Content -->
+                         <h1 class="wow fadeInUp" data-wow-delay="300ms"><span style="color: #fb8e00;">TRACKS</span></h1>
+                
+        
+
+            <div class="tracks-page" id="tracks" style="">
+                    <div class="section-pane">
+                    <div class="section-content">
+                        <div class="track-icons">
+                        <div class="why-row" style="color:black">
+                            <div class="track"> 
+                            <img src="assets/img/tracks/people.png">
+                            <h4>EDUCATION</h4>
+                            <div class="body-text">Provide greater opportunities for learning both in the classroom and at home</div>
+                            </div>
+                            <div class="track"> 
+                            <img src="assets/img/tracks/hacks.png">
+                            <h4>CYBER SECURITY</h4>
+                            <div class="body-text">Defend those assets against all threat actors throughout the entire life cycle of a cyber attack</div>
+                            </div>
+                            <div class="track">
+                            <img src="assets/img/tracks/food.png"> 
+                            <h4>AGRICULTURE</h4>
+                            <div class="body-text">Develop to improve efficiency and profitability for farming</div>
+                            </div>
+                            <div class="track">
+                            <img src="assets/img/tracks/education.png">
+                            <h4>ENVIRONMENT</h4>
+                            <div class="body-text">Protecting our environment also protects life on earth.</div>
+                            </div>
+                            <div class="track">
+                            <img src="assets/img/tracks/social.png">
+                            <h4>SOCIAL GOOD</h4>
+                            <div class="body-text">Make positive change in the world</div>
+                            </div>
+                            <div class="track">
+                                    <img src="assets/img/tracks/fintech.png">
+                                    <h4>OPEN INNOVATION</h4>
+                                    <div class="body-text">Have something in mind which is out of the box? Go with it!</div>
+                                    </div>
+                        </div>
+                        <h5 style="color: black;">Hover over the tracks to learn more!</h5>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+    </section>
+    <section id="about" class="cta text-center">
+            <div class="container">
+                <div class="row align-items-center">
+                <!-- About Content -->
+                    <div class="col-12 col-md-6 order-2 order-lg-1">
+                        <div class="about-content-text mb-80">
+                            <h1 class="wow fadeInUp" data-wow-delay="300ms">THE <span style="color: #fb8e00;">Institution</span></h1>
+                            <p class="wow fadeInUp" data-wow-delay="300ms" >Cochin University of Science and Technology (CUSAT) occupies a unique place on the
+                                academic road map of Asia as a premier institution for higher education. The
+                                University’s motto ‘Tejasswinavadhitamasthu’ meaning ‘may thewisdom accrued deify
+                                us both - the teacher and the taught and percolateto the universe in its totality.
+                                The pursuit of excellence through these programmes
+                                has given CUSAT national and international acclaim.</p><br>
+                                <a href="https://cusat.ac.in/">Know More!</a>
+                    </div>
+               </div>
+               <div class="col-6 col-md-6 order-1 order-lg-2">
+                    <div class="about-thumb mb-80 wow fadeInUp" style= "margin-left:30%;" data-wow-delay="300ms">
+                        <img src="assets/img/cusat_1.png" style="" alt="CUSAT Logo" id="abt_cusat">
+                    </div>
+                </div>
+            </div> 
+           
+                </div>
+    </section>
+                <section id="about" class="cta text-center">
+
+                <div class="container">
+                        <div class="row align-items-center">
+                        <!-- About Content -->
+                            <div class="col-12 col-md-6 order-2 order-lg-1">
+                                <div class="about-content-text mb-80">
+                                    <h1 class="wow fadeInUp" data-wow-delay="300ms">ECOSYSTEM <span style="color: #fb8e00;">PARTNER</span></h1>
+                                    <p class="wow fadeInUp" data-wow-delay="300ms" >Kerala Startup Mission (KSUM) is the central agency of the Government of Kerala for entrepreneurship development and incubation activities in Kerala, India.A startup accelerator in Kerala, to promote technology-based entrepreneurship activities, and to create the infrastructure and environment required to support high-technology-based businesses.</p>
+                                    <br>                                <a href="https://startupmission.kerala.gov.in/">Know More!</a>
+
+                                </div>
+                       </div>
+                       <div class="col-6 col-md-6 order-1 order-lg-2">
+                            <div class="about-thumb mb-80 wow fadeInUp" style= "margin-left:30%;" data-wow-delay="300ms">
+                                <img src="assets/img/ksum.png" style="" alt="HackVerse Logo" id="abt_ksum">
+                            </div>
+                        </div>
+                    </div> 
+                   
+                        </div>      
+      
+        </section>
+
+    
+    <section id="faq" class="text-center">
+        <a name="faq"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Frequently Asked Questions <span class="line"></span></h2>
+
+                    <div class="row">
+
+        
+                        <div class="col-lg-6">
+
+                            <dt>What is Hackstudio?</dt>
+
+                            <dd>HackStudio is a 24 hour hackathon organized by the IT Association, Cochin University of Science and Technology</dd>
+
+                        </div>
+
+                        <br />
+
+                        <div class="col-lg-6">
+
+                            <dt>Who can attend HackStudio?</dt>
+
+                            <dd>Any university student, undergraduate or postgraduate student, or graduates who are less than a year out of university.</dd>
+
+                        </div>
+
+                        <br />
+
+                       
+
+                        <div class="col-lg-6">
+
+                            <dt>How to get involved with Hackstudio?</dt>
+
+                            <dd>If you are a <b>company/organization</b> looking to increase your spectrum and reach out to more people. HackStudio is a great platform for you.<br/>Check out the Hack Studio brochure:<a href="https://drive.google.com/file/d/1LGoOhMHvk_N4RMaY7eVxkRK1IzoknXo3/view?usp=sharing">Click Here!</a><br/>
+
+                                If you are a <b>university student</b> you can open up with diversified minds and ideas with HackStudio. For more update stay tuned with our social media pages @TheHackStudio. Also show us your excitement with hashtags #HackStudio #IHaveNewIdea  on social media. We have special goodies for you.
+
+                            </dd>
+
+                        </div>
+
+                        <br />
+
+                        <div class="col-lg-6">
+
+                            <dt>I am a beginner to technology, Can I participate in Hackstudio?</dt>
+
+                            <dd>We will have mentors on site to teach you lots of new skills and guide you towards creating your first hack. All the students are very friendly and willing to help each other out. Come along and learn your first lines of code and make something cool.</dd>
+
+                        </div>
+
+                        <br />
+
+                       
+
+                        <div class="col-lg-6">
+
+                            <br><dt>Can i participate without a computer science background?</dt>
+
+                            <dd>Of course!It all depends on your skills. You can learn about new tech anywhere, anytime.</dd>
+
+                        </div>
+
+                        <br />
+
+                        <div class="col-lg-6">
+
+                            <dt>How do I contact you?</dt>
+
+                            <dd>Email us: <a href="mailto:hackstudio@cusat.ac.in"><span>hackstudio@cusat.ac.in</span></a></dd>
+
+                        </div>
+
+                        <br />
+
+                        <div class="col-lg-6">
+
+                            <br><dt>What are the perks of participating in this hackathon?</dt>
+
+                            <dd>The hackathon will instantly increase your knowledge and skill level and will serve as a platform to socialize with the tech community. Cash prizes and other perks are in store for the winners and cool schwag for all participants.</dd>
+
+                        </div>
+
+                        <br /><br>
+
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <center><h2 id="schedule">See Our Schedule <span class="line"></span></h2></center>
+    <center><button id="schedule_btn"><a href="https://www.notion.so/HackStudio-Schedule-233ae65dde17404782cc67fa93618ca5"id="a_none">Schedule</a></button></center>
+
+       <section id="sponsors" name="sponsor" class="container sponsors text-center">
+            <div class="sponsors-text">
+            	<center><h2>Title Sponsors <span class="line"></span></h2></center>
+            <!-- <h2> Title Sponsors <span class="line"></span></h2> -->
+            </div>
+            <center>
+
+            <div class="row no-collapse" id="partner">
+                <div class="4u">
+                        <a href="https://www.c3m.io/" class="image fit" target="_blank">
+                        <img src="assets/img/sponsors/c3m.png" alt="C3M Cloud" class="big-sponsors">
+                    </a>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <center>
+
+            <div class="row no-collapse" id="partner">
+                <div class="4u">
+                   <a href="https://devfolio.co/" class="fit" target="_blank">
+                        <img src="assets/img/sponsors/Logo+Text - White.svg" alt="Devfolio" class="big-sponsors">
+                    </a>
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+
+        <!-- <center> -->
+            <div class="sponsors">
+            <center><h2> Sponsors <span class="line"></span></h2></center>
+            </div><br><br>
+            <!-- </center> -->
+            <center>
+            <div class="row no-collapse" id="partner">
+		<div id="partner_row">
+                <div class="4u">
+                    <a href="https://matic.network/" class="image fit" target="_blank" >
+                    <img src="assets/img/sponsors/Matic-Network_Logo-Light.png" href="https://matic.network/" alt="Matic" class="matic-logo">
+                    </a>
+                </div>
+		<div class="4u">
+                    <a href="https://get.tech/" class="image fit" target="_blank">
+                        <img src="assets/img/sponsors/tech.png" alt="Tech Domain" class="cusat-prize-sponsors">
+                    </a>
+                </div>
+		
+
+            </div></center>
+            <br><br><br>
+        <center>
+            <div class="row no-collapse" id="partner">
+		<div id="partner_row">
+
+		<div class="4u">
+                    <a href="https://fold.money/" class="image fit" target="_blank">
+                        <img src="assets/img/sponsors/foldWhite.png" alt="Fold Money" class="cusat-prize-sponsors">
+                    </a>
+            	</div>
+            	<div class="4u">
+                    <a href="https://agora.io/" class="image fit" target="_blank" >
+                    <img src="assets/img/sponsors/Agora-blue-logo.svg" alt="Agora.io" class="cusat-prize-sponsors" style="width: 120%">
+                    </a>
+            	</div>
+                <div class="4u">
+                    <a href="https://github.com/" class="image fit" target="_blank" >
+                    <img src="assets/img/sponsors/github.png" alt="github.com"  class="cusat-prize-sponsors" style="width: 120%">
+                    </a>
+                </div>
+
+            </div></center>
+        
+        <br>
+        <br>
+        <br>
+        <center>
+            <div class="sponsors">
+            <h2>Cloud Partners <span class="line"></span></h2>
+                
+                
+            </div><br><br>
+           
+            <div class="row no-collapse" id="partner">
+                <div id="partner_row">
+                <div class="4u">
+                    <a href="https://aws.amazon.com/" class="image fit" target="_blank" >
+                        <img src="assets/img/sponsors/aws.png" alt="AWS" class="big-sponsors">
+                    </a>
+                </div>
+                <div class="4u">
+                    <a href="https://awsugkochi.in/" class="image fit" target="_blank">
+                        <img src="assets/img/sponsors/awskochi.png" alt="AWSKochi" class="cusat-prize-sponsors">
+                    </a>
+            	</div>
+<!--                 <div class="4u">
+                    <a href="https://www.creative-tim.com/" class="image fit" target="_blank">
+                        <img src="assets/img/sponsors/creative-tim-white-bg.jpg" alt="CUSAT">
+                    </a>
+                </div> -->
+                </div>    
+                </div> 
+            
+        </center>
+        <br><br>
+            <center>
+            <div class="sponsors">
+            <h2>Category Prize Sponsors <span class="line"></span></h2>  
+            </div>
+           
+            <div class="row no-collapse" id="spon_row" style="" >
+                <div id="sponsor_block">
+                <div class="4u">
+                    <a href="https://www.creative-tim.com/" class=" fit" target="_blank">
+                        <img src="assets/img/sponsors/ctim-logo.png" alt="creative-tim" class="already-big-sponsors">
+                    </a>
+                </div>
+                <div class="4u">
+                    <a href="https://balsamiq.cloud/" class=" fit" target="_blank" >
+                        <img src="assets/img/sponsors/balsamiq-logo.svg" alt="balsamiq" class="prize-sponsors">
+                    </a>
+                </div>
+                <div class="4u">
+                    <a href="https://www.wolfram.com/" class=" fit" target="_blank">
+                        <img src="assets/img/sponsors/wolfram-logo.png" alt="Wolfram" class="already-big-sponsors">
+                    </a>
+                </div>
+                <!-- <div class="4u">
+                    <a href="https://www.creative-tim.com/" class=" fit" target="_blank">
+                        <img src="assets/img/sponsors/bugsee-logo.png" alt="creative-tim" class="prize-sponsors">
+                    </a>
+                </div>
+                <div class="4u">
+                    <a href="https://www.creative-tim.com/" class=" fit" target="_blank">
+                        <img src="assets/img/sponsors/cloud-3-logo.png" alt="creative-tim" class="prize-sponsors">
+                    </a>
+                </div> -->
+                </div>
+            </div><br><br>
+            <div class="row no-collapse" id="spon_row" style="" >
+                <div id="sponsor_block">
+                <div class="4u">
+                    <a href="https://www.bugsee.com/" class=" fit" target="_blank">
+                        <img src="assets/img/sponsors/bugsee-logo.png" alt="bugsee" class="prize-sponsors">
+                    </a>
+                </div>
+                <div class="4u">
+                    <a href="https://cloudsploit.com/" class=" fit" target="_blank">
+                        <img src="assets/img/sponsors/cloud-5-logo.png" alt="cloudsploit" class="special-size">
+                    </a>
+                </div>
+                <div class="4u">
+                    <a href="http://bit.ly/37Mn2lb"  class=" fit" target="_blank">
+                        <img src="assets/img/sponsors/codacy.png" alt="codacy" class="special-size">
+                    </a>
+                </div>
+                </div>
+            </div>
+            <!-- <div class="row no-collapse" id="partner">
+                <div class="4u">
+                    <a href="https://agora.io/" class="image fit" target="_blank" >
+                    <img src="assets/img/sponsors/agora.io.png" alt="Agora.io" id="agora-logo" class="big-sponsors" style="">
+                    </a>
+                </div>
+            </div> -->
+            </div>
+           
+            <br><br>  
+            
+        </center>
+        <center>
+            <div class="sponsors">
+                <h2>Learning Partner <span class="line"></span></h2>  
+                </div>
+                
+                    <div class="row no-collapse" id="partner">
+                        <div class="4u">
+                            <a href="https://codingblocks.com/" class="image fit" target="_blank" >
+                            <img src="assets/img/sponsors/cb_white.png" alt="Coding Blocks" class="matic-logo">
+                            </a>
+                        </div>
+                    </div>
+                  
+        </center>
+
+            <br>
+            <center>
+            <div class="sponsors">
+                <h2>Programming Partner <span class="line"></span></h2>  
+                </div>
+                    <div class="row no-collapse" id="partner">
+                        <div class="4u">
+                            <a href="https://codechef.com/" class="image fit" target="_blank" >
+                            <img src="assets/img/sponsors/codechef.png" alt="codechef" class="matic-logo">
+                            </a>
+                        </div>
+                    </div>
+                  
+        </center>
+        <br><br> <br>
+            
+            <center>
+                <div class="sponsors">
+                    <h2>Organizing Institute<span class="line"></span></h2>  
+                    </div>
+                    
+                        <div class="row no-collapse" id="partner">
+                            <div class="4u">
+                                <a href="https://cusat.ac.in/" class="image fit" target="_blank" >
+                                <img src="assets/img/sponsors/Cusat_bg.png" alt="CUSAT" class="matic-logo" style="width: 70%">
+                                </a>
+                            </div>
+				<br>  <br>
+                        </div>
+                      
+            </center>
+    
+                <br>  <br>    
+        <center>
+            <div class="sponsors">
+            <h2>Organizing Partners <span class="line"></span></h2>
+                
+                
+            </div><br><br>
+           
+            <div class="row no-collapse" id="partner">
+                <div id="partner_row">
+                <div class="4u">
+                    <a href="https://incubateind.com/" class="image fit" target="_blank" >
+                        <img src="assets/img/sponsors/IncubateIND_White_Logo.png" alt="IncubateInd" class="cusat-prize-sponsors">
+                    </a>
+                </div>
+                <div class="4u">
+                    <a href="https://startupmission.kerala.gov.in/" class="image fit" target="_blank">
+                        <img src="assets/img/sponsors/ksum_bg.png" alt="KSUM" class="prize-sponsors">
+                    </a>
+            	</div>
+                </div>    
+                </div> 
+            
+        </center>
+        <br><br>
+        <center>
+            <div class="sponsors">
+            <h2>Community Partners <span class="line"></span></h2>
+                
+                
+            </div>
+           
+            <div class="row no-collapse" id="partner">
+                <div id="community_row">
+                <div class="4u">
+                    <a href="https://tinkerhub.org/" class="image fit" target="_blank">
+                        <img src="assets/img/sponsors/tinkerhub1.png" alt="TINKER HUB CUSAT" class="special-size">
+                    </a>
+                </div>
+                <div class="4u">
+                    <a href="https://codebuckets.in/" class="image fit" target="_blank">
+                        <img src="assets/img/sponsors/codebucket.png" alt="CODE BUCKET" class="special-size">
+                    </a>
+                </div>
+
+               <div class="4u" style="width: 50%;">
+                    <a href="https://hashnode.com/@dsccusat" class="image fit" target="_blank">
+                        <img src="assets/img/dsc -cusat logo.png" alt="DSC CUSAT" class="dsc-special-size">
+                    </a>
+                </div>
+                </div>    
+                </div> 
+            
+        </center>
+        <br><br><br>
+        <center>
+                <div class="sponsors">
+                    <h2>Supported By<span class="line"></span></h2>  
+                    </div>
+                    
+                        <div class="row no-collapse" id="partner">
+                            <div class="4u">
+                                <a href="https://www.teqip.in/" class="image fit" target="_blank" >
+                                <img src="assets/img/sponsors/TEQIP.png" alt="CUSAT" class="big-sponsors" style="">
+                                </a>
+                            </div>
+				<br>  <br>
+                        </div>
+                      
+            </center>
+
+        </section>  
+        <section id="faqp" class="flex-direction">
+        	<center><h2>Prizes <span class="line"></span></h2></center>
+        	<br>
+        <div class="rowp">
+  			<div class="columnp">
+    			<div class="card3">
+    				<div style="width:100%">
+    					<div style="float:left;">
+    						<img class="speakerimg" src="assets/img/prizes/echo.svg" style="width:100px;height:80px;width:80px;">
+    						
+    					</div>
+    					<h3 style="margin-top:10px; ">First Prize</h3>
+    				</div>
+    				<div style="width:100%;margin-top:2px;text-align:left;">
+    					<font size='3' style="text-align:center;"><br><br>Amazon echo dot for each team member+Cash prize!</font>
+    				</div>
+  				</div>
+  			</div>
+
+  			<div class="columnp">
+    			<div class="card3">
+    				<div style="width:100%">
+    					<div style="float:left;">
+    						<img class="speakerimg" src="assets/img/prizes/fitness.png" style="width:90px;height:80px;">
+    					</div>
+    					<h3 style="margin-top:10px; ">Second Prize</h3>
+    				</div>
+
+    				<div style="width:100%;margin-top:2px;text-align:left">
+    					<font size='3' style="text-align:center;"><br><br>Mi band 4 for each team member </font>
+    				</div>
+  				</div>
+  			</div>
+
+  			<div class="columnp">
+    			<div class="card3">
+    				<div style="width:100%">
+    					<div style="float:left;">
+    						<img class="speakerimg" src="assets/img/prizes/jblspeaker.png" style="width:100px;height:90px; margin-top: -20px">
+    					</div>
+    					<h3 style="margin-top:10px; ">Code4change Challenge Winners</h3>
+    				</div>
+    				<div style="width:100%;margin-top:1px;text-align:left">
+    					<font size='3' style="text-align:center;"><br>JBL bluetooth speaker for each team member+Cash Prize</font>
+    				</div>
+  				</div>
+  			</div>	
+
+		</div>
+	</section>
+        <br>
+        <br>
+        <br>
+            
+                <div class="col-lg-12">
+                    <center>
+                        <dt style="font-size: 170%">Want to sponsor us or just want to get in touch?</dt>
+                            <dd style="font-size: 150%">You can check out the <a href="https://drive.google.com/file/d/1LGoOhMHvk_N4RMaY7eVxkRK1IzoknXo3/view?usp=sharing" style="color: #fb8e00">brochure</a> or mail us at: <br><a href="mailto:hackstudio@cusat.ac.in" style="color: #fb8e00">hackstudio@cusat.ac.in</a></dd>
+                    </center>
+                            
+                </div>
+            <br>
+                        
+        <br>
+        <br>
+        <br>
+       
+
+        
+  <section id="venue" class="text-center">
+        <h2 class="hack11">Hackathon Venue <span class="line"></span></h2>
+<link rel="stylesheet" href="assets/venue.min.css">
+<style>
+    #map {
+        height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+</head>
+
+
+
+
+
+<div id="content">
+
+    <div class="venue-container containerx">
+        <div id="map"></div>
+
+        <a target="_blank" href="https://www.google.com/maps/place/Integrated+Startup+Complex+(ISC)+-+KSUM/@10.0554625,76.3525042,17z/data=!3m1!4b1!4m5!3m4!1s0x3b080d35b9433125:0x95bf73d212986d71!8m2!3d10.0554625!4d76.3546929" class="directions">Get Directions</a>
+    </div>
+    <div class="containerx">
+    </div>
+    <script>
+        var map;
+
+        function initMap() {
+
+            var myLatLng = {
+                lat: 10.055567,
+                lng: 76.352097
+            };
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                zoom: 18
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: "Integrated Startup Mission, Thrikkakara"
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASuag7lvuXRCvnbG9thsUdkXiGkPWtzV0&callback=initMap" async defer></script>
+
+</div>
+
+
+
+
+
+
+
+</body>
+<script src="js/jquery.min.js"></script>
+
+<script src="js/navbar.min.js"></script>
+        
+    </section> 
+
+    <footer class="text-center">
+        <center>
+        <div class="container">
+            <div class="quotes">
+                <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+                	document.addEventListener('DOMContentLoaded', function () {
+    let devfolioOptions = {
+        buttonSelector: '.devfolio-apply-now',
+        key: 'hackstudio', //key goes here!
+    }
+
+    let script = document.createElement('script');
+    script.src = "https://apply.devfolio.co";
+    document.head.append(script);
+
+    script.onload = function () {
+        new Devfolio(devfolioOptions);
+    }
+
+    script.onerror = function () {
+        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+            window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+        });
+    }
+});
+                	document.addEventListener('DOMContentLoaded', function () {
+    let devfolioOptions = {
+        buttonSelector: '#devfolio-apply-now',
+        key: 'hackstudio', //key goes here!
+    }
+
+    let script = document.createElement('script');
+    script.src = "https://apply.devfolio.co";
+    document.head.append(script);
+
+    script.onload = function () {
+        new Devfolio(devfolioOptions);
+    }
+
+    script.onerror = function () {
+        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+            window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+        });
+    }
+});
+                    // Print a random quote
+                    var quotes = [
+                        "<h3>&ldquo;Don't tell me the sky is the limit when there are footprints on the moon!&rdquo;</h3><center><p>&mdash; Paul Brandt</p><center>",
+                        "<h3>&ldquo;Keep your eyes on the stars, and your feet on the ground.&rdquo;</h3><center><p>&mdash; Theodore Roosevelt</p></center>",
+                        "<h3>&ldquo;Act as if what you do makes a difference. It does.&rdquo;</h3><center><p>&mdash; William James</p></center>"
+                    ];
+                    var item = quotes[Math.floor(Math.random() * quotes.length)];
+                    document.write(item);
+                </script>
+            </div>
+
+            <p class="copy">Built at the <a target="_blank" href="http://www.cusat.ac.in/">Cochin University of Science and Technology</a>
+                by<br><a href="https://github.com/TheTechBoard/" target="_blank">TechBoard    </a>.</p>
+            <ul class="social">
+                <li><a href="https://instagram.com/thehackstudio" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/thehackstudio" target="_blank"><i class="fab fa-twitter"></i></a></li>
+		<!-- <li><a href="https://t.me/joinchat/G40n-EjtiVRoHJYD1VSnLw" target="_blank"><i class="fab fa-telegram"></i></a></li> -->
+            </ul>
+            <center><a href="https://devfolio.co/code-of-conduct" class="code-of-conduct">Code of Conduct</a></center>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div></center>
+        <!-- <center><a href="https://devfolio.co/code-of-conduct">Code of Conduct</a></center> -->
+    </footer>
+    
+      <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDBmbxXmi_WiX322tfOyGRaa3hw4vGDS7A"></script>
+    <script src="code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+
+
+
+</html>
+
